@@ -1,0 +1,96 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 1, ../sass/_header.scss */
+body {
+  margin: 0;
+}
+
+/* line 6, ../sass/_header.scss */
+#header {
+  position: fixed;
+  padding: 20px 2% 20px 2%;
+  vertical-align: top;
+  border-bottom: 1px solid dimgray;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.7);
+  /*h1*/
+  /*logo-image*/
+  /*logo*/
+  /*nav*/
+}
+/* line 15, ../sass/_header.scss */
+#header h1 {
+  display: inline;
+  font-style: italic;
+}
+/* line 21, ../sass/_header.scss */
+#header .logo-image {
+  width: 60px;
+}
+/* line 26, ../sass/_header.scss */
+#header .logo {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 33, ../sass/_header.scss */
+#header .nav {
+  display: inline-block;
+  width: 68%;
+  vertical-align: top;
+  text-align: right;
+  padding: 20px 0 0 0;
+  /*li*/
+}
+/* line 40, ../sass/_header.scss */
+#header .nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 3%;
+  font-family: "Open Sans", sans-serif;
+  color: dimgray;
+  font-weight: 300;
+}
+
+/*header*/
+/* line 1, ../sass/_fonts.scss */
+h1 {
+  font-family: 'Redressed', cursive;
+  color: pink;
+  font-size: 72px;
+}
+
+/* line 8, ../sass/_fonts.scss */
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 0 0 0 100px;
+  margin: 0;
+  color: dimgray;
+}
+
+/* line 1, ../sass/_poster.scss */
+#poster {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/wedding-couple.jpg");
+  background-size: cover;
+}
+/* line 7, ../sass/_poster.scss */
+#poster h2 {
+  padding: 40vh 0 0 10%;
+  font-size: 60px;
+  font-style: normal;
+  width: 50%;
+}
+/* line 15, ../sass/_poster.scss */
+#poster h3 {
+  padding: 0 0 0 10%;
+}
+
+/*poster*/

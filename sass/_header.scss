@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+
+}
+
+#header {
+  position: fixed;
+  padding: 20px 2% 20px 2%;
+  vertical-align: top;
+  border-bottom: 1px solid dimgray;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(255,255,255,.7);
+
+  h1 {
+    display: inline;
+    font-style: italic;
+
+  }/*h1*/
+
+  .logo-image {
+    width: 60px;
+
+  }/*logo-image*/
+
+  .logo {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+
+  }/*logo*/
+
+  .nav {
+    display: inline-block;
+    width: 68%;
+    vertical-align: top;
+    text-align: right;
+    padding: 20px 0 0 0;
+
+    li{
+      list-style: none;
+      display: inline-block;
+      padding: 0 3%;
+      font-family: "Open Sans", sans-serif;
+      color: dimgray;
+      font-weight: 300;
+
+    }/*li*/
+  }/*nav*/
+}/*header*/
