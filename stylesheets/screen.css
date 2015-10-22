@@ -15,7 +15,7 @@ body {
   border-bottom: 1px solid dimgray;
   width: 100%;
   box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.8);
   /*h1*/
   /*logo-image*/
   /*logo*/
@@ -74,23 +74,436 @@ h2 {
   color: dimgray;
 }
 
+/*h2*/
+/* line 19, ../sass/_fonts.scss */
+h3 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: dimgray;
+  font-style: italic;
+}
+
+/*h3*/
+/* line 28, ../sass/_fonts.scss */
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: dimgray;
+}
+
+/* line 36, ../sass/_fonts.scss */
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: gray;
+  font-style: italic;
+}
+
+/* line 45, ../sass/_fonts.scss */
+h6 {
+  font-family: 'Redressed', cursive;
+  font-size: 36px;
+  margin: 0;
+  font-style: italic;
+}
+
 /* line 1, ../sass/_poster.scss */
 #poster {
   width: 100%;
   height: 100vh;
   background: url("../img/wedding-couple.jpg");
   background-size: cover;
+  /*h2*/
+  /*button-pink*/
+  /*button-pink*/
 }
 /* line 7, ../sass/_poster.scss */
 #poster h2 {
-  padding: 40vh 0 0 10%;
+  padding: 40vh 0 10vh 10%;
   font-size: 60px;
   font-style: normal;
   width: 50%;
 }
 /* line 15, ../sass/_poster.scss */
-#poster h3 {
-  padding: 0 0 0 10%;
+#poster .button-pink {
+  margin: 0 2% 0 10%;
+  padding: 6px 42px;
+  border: 2px solid pink;
+  background: pink;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  /*hover*/
+}
+/* line 25, ../sass/_poster.scss */
+#poster .button-pink:hover {
+  background: #e79daa;
+  border: 2px solid #e79daa;
+}
+/* line 32, ../sass/_poster.scss */
+#poster .button-clear {
+  padding: 6px 46px;
+  border: 2px solid dimgray;
+  color: dimgray;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  /*hover*/
+}
+/* line 40, ../sass/_poster.scss */
+#poster .button-clear:hover {
+  background: rgba(0, 0, 0, 0.1);
 }
 
 /*poster*/
+/* line 1, ../sass/_browse.scss */
+#browse {
+  box-sizing: border-box;
+  padding: 150px 10% 100px;
+  /*h2*/
+  /*browse-list*/
+}
+/* line 5, ../sass/_browse.scss */
+#browse h2 {
+  font-style: normal;
+  font-size: 48px;
+  padding: 0;
+  color: dimgray;
+}
+/* line 13, ../sass/_browse.scss */
+#browse .browse-list {
+  padding: 50px 0;
+  text-align: center;
+  /*h2*/
+  /*li*/
+  /*browse-overlay*/
+}
+/* line 17, ../sass/_browse.scss */
+#browse .browse-list h2 {
+  color: white;
+  font-size: 40px;
+}
+/* line 23, ../sass/_browse.scss */
+#browse .browse-list li {
+  display: inline-block;
+  width: 30%;
+  padding: 10px 1%;
+  /*hover*/
+  /*a*/
+  /*photographer*/
+  /*florist*/
+  /*venue*/
+  /*caterer*/
+  /*entertainment*/
+  /*dress*/
+  /*more*/
+  /*hair*/
+  /*invitation*/
+}
+/* line 28, ../sass/_browse.scss */
+#browse .browse-list li:hover {
+  /*browse-overlay*/
+}
+/* line 30, ../sass/_browse.scss */
+#browse .browse-list li:hover .browse-overlay {
+  display: block;
+}
+/* line 36, ../sass/_browse.scss */
+#browse .browse-list li a {
+  text-decoration: none;
+  /*div*/
+}
+/* line 39, ../sass/_browse.scss */
+#browse .browse-list li a div {
+  width: 100%;
+  height: 200px;
+  padding: 100px 0 0 0;
+  box-sizing: border-box;
+}
+/* line 48, ../sass/_browse.scss */
+#browse .browse-list li .photographer {
+  background: url("../img/camera.jpg") center;
+  background-size: cover;
+}
+/* line 54, ../sass/_browse.scss */
+#browse .browse-list li .florist {
+  background: url("../img/flower.jpg") center;
+  background-size: cover;
+}
+/* line 60, ../sass/_browse.scss */
+#browse .browse-list li .venue {
+  background: url("../img/chandelier.jpg") center;
+  background-size: cover;
+}
+/* line 65, ../sass/_browse.scss */
+#browse .browse-list li .caterer {
+  background: url("../img/food.jpg") center;
+  background-size: cover;
+}
+/* line 70, ../sass/_browse.scss */
+#browse .browse-list li .entertainment {
+  background: url("../img/record.jpg") center;
+  background-size: cover;
+}
+/* line 75, ../sass/_browse.scss */
+#browse .browse-list li .dress {
+  background: url("../img/dress.jpg") center;
+  background-size: cover;
+}
+/* line 81, ../sass/_browse.scss */
+#browse .browse-list li .more {
+  background: url("../img/glass.jpg") center;
+  background-size: cover;
+}
+/* line 87, ../sass/_browse.scss */
+#browse .browse-list li .hair {
+  background: url("../img/brushes.jpg") center;
+  background-size: cover;
+}
+/* line 93, ../sass/_browse.scss */
+#browse .browse-list li .invitation {
+  background: url("../img/paper.jpg") center;
+  background-size: cover;
+}
+/* line 100, ../sass/_browse.scss */
+#browse .browse-list .browse-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  width: 24%;
+  height: 200px;
+  display: none;
+}
+
+/*browse*/
+/* line 1, ../sass/_checklist.scss */
+#checklist {
+  box-sizing: border-box;
+  padding: 100px 10% 50px;
+  background: #ededed;
+  /*h2*/
+  /*checklist-bubbles*/
+}
+/* line 6, ../sass/_checklist.scss */
+#checklist h2 {
+  font-style: normal;
+  font-size: 48px;
+  padding: 0;
+  color: dimgray;
+}
+/* line 14, ../sass/_checklist.scss */
+#checklist .checklist-bubbles {
+  text-align: center;
+  vertical-align: top;
+  padding: 50px 0;
+  /*li*/
+  /*church*/
+}
+/* line 19, ../sass/_checklist.scss */
+#checklist .checklist-bubbles li {
+  vertical-align: top;
+  width: 8%;
+  display: inline-block;
+  text-align: center;
+  padding: 0 1%;
+  /*div*/
+  /*photo-bubble*/
+  /*photo-bubble*/
+  /*photo-bubble*/
+  /*photo-bubble*/
+  /*photo-bubble*/
+  /*photo-bubble*/
+  /*hair-bubble, invite-bubble*/
+  /*more-bubble*/
+}
+/* line 26, ../sass/_checklist.scss */
+#checklist .checklist-bubbles li div {
+  border: 1px solid gray;
+  border-radius: 100%;
+  width: 75px;
+  height: 75px;
+  background: lightgrey;
+  margin: 0 auto;
+  text-align: right;
+}
+/* line 35, ../sass/_checklist.scss */
+#checklist .checklist-bubbles li div i {
+  text-align: right;
+  color: pink;
+  margin: 0 -15px 0 0;
+  font-size: 36px;
+}
+/* line 44, ../sass/_checklist.scss */
+#checklist .checklist-bubbles li .photo-bubble {
+  background: url("../img/photographer-icon.jpg") center;
+  background-size: cover;
+}
+/* line 49, ../sass/_checklist.scss */
+#checklist .checklist-bubbles li .flower-bubble {
+  background: url("../img/florist-profile.jpg") center;
+  background-size: cover;
+}
+/* line 54, ../sass/_checklist.scss */
+#checklist .checklist-bubbles li .venue-bubble {
+  background: url("../img/venue-profile.jpg") center;
+  background-size: cover;
+}
+/* line 59, ../sass/_checklist.scss */
+#checklist .checklist-bubbles li .food-bubble {
+  background: url("../img/caterer-profile.jpg") center;
+  background-size: cover;
+}
+/* line 64, ../sass/_checklist.scss */
+#checklist .checklist-bubbles li .entertainment-bubble {
+  background: url("../img/dj-profile.jpg") center;
+  background-size: cover;
+}
+/* line 69, ../sass/_checklist.scss */
+#checklist .checklist-bubbles li .dress-bubble {
+  background: url("../img/dress-profile.jpg") center;
+  background-size: cover;
+}
+/* line 74, ../sass/_checklist.scss */
+#checklist .checklist-bubbles li .hair-bubble, #checklist .checklist-bubbles li .invite-bubble {
+  box-sizing: border-box;
+  padding: 25px 0 0 0;
+  text-align: center;
+  /*i*/
+}
+/* line 79, ../sass/_checklist.scss */
+#checklist .checklist-bubbles li .hair-bubble i, #checklist .checklist-bubbles li .invite-bubble i {
+  font-size: 24px;
+  color: gray;
+  margin: 0;
+}
+/* line 86, ../sass/_checklist.scss */
+#checklist .checklist-bubbles li .more-bubble {
+  box-sizing: border-box;
+  padding: 25px 0 0 0;
+  text-align: center;
+  /*i*/
+}
+/* line 91, ../sass/_checklist.scss */
+#checklist .checklist-bubbles li .more-bubble i {
+  font-size: 30px;
+  color: gray;
+  margin: 0;
+}
+/* line 100, ../sass/_checklist.scss */
+#checklist .checklist-bubbles .church {
+  width: 100%;
+}
+
+/*checklist*/
+/* line 1, ../sass/_start-planning.scss */
+#start-planning {
+  padding: 100px 5% 200px;
+  text-align: center;
+  box-sizing: border-box;
+}
+/* line 6, ../sass/_start-planning.scss */
+#start-planning h2 {
+  font-size: 36px;
+  padding: 0 0 100px 0;
+}
+
+/*start-planning*/
+/* line 1, ../sass/_buttons.scss */
+.button-pink {
+  padding: 6px 42px;
+  border: 2px solid pink;
+  background: pink;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  /*hover*/
+}
+/* line 10, ../sass/_buttons.scss */
+.button-pink:hover {
+  background: #e79daa;
+  border: 2px solid #e79daa;
+}
+
+/*button-pink*/
+/* line 17, ../sass/_buttons.scss */
+.button-clear {
+  padding: 6px 46px;
+  border: 2px solid dimgray;
+  color: dimgray;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  /*hover*/
+}
+/* line 25, ../sass/_buttons.scss */
+.button-clear:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/*button-pink*/
+/* line 1, ../sass/_footer.scss */
+#footer {
+  background: pink;
+  padding: 25px 5%;
+  color: white;
+  /*a*/
+  /*ul*/
+  /*social*/
+  /*contact*/
+}
+/* line 6, ../sass/_footer.scss */
+#footer a {
+  color: white;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+/* line 14, ../sass/_footer.scss */
+#footer ul {
+  list-style: none;
+  display: inline-block;
+  width: 48%;
+  padding: 0;
+  vertical-align: top;
+}
+/* line 23, ../sass/_footer.scss */
+#footer .social {
+  text-align: right;
+  padding: 24px 0 0 0;
+  /*li*/
+}
+/* line 27, ../sass/_footer.scss */
+#footer .social li {
+  display: inline;
+  padding: 1%;
+  /*i*/
+}
+/* line 31, ../sass/_footer.scss */
+#footer .social li i {
+  font-size: 24px;
+}
+/* line 38, ../sass/_footer.scss */
+#footer .contact {
+  /*img*/
+  /*h6*/
+  /*a*/
+}
+/* line 39, ../sass/_footer.scss */
+#footer .contact img {
+  display: inline;
+  width: 30px;
+}
+/* line 44, ../sass/_footer.scss */
+#footer .contact h6 {
+  display: inline;
+}
+/* line 49, ../sass/_footer.scss */
+#footer .contact a {
+  padding: 0 0 0 36px;
+}
+
+/*footer*/

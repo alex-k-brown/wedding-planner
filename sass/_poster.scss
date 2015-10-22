@@ -5,15 +5,41 @@
   background-size: cover;
 
   h2 {
-    padding: 40vh 0 0 10%;
+    padding: 40vh 0 10vh 10%;
     font-size: 60px;
     font-style: normal;
     width: 50%;
 
-  }
+  }/*h2*/
 
-  h3 {
-    padding: 0 0 0 10%;
+  .button-pink{
+    margin: 0 2% 0 10%;
+    padding: 6px 42px;
+    border: 2px solid pink;
+    background: pink;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
 
-  }
+    &:hover {
+      background: #e79daa;
+      border: 2px solid #e79daa;
+
+    }/*hover*/
+  }/*button-pink*/
+
+  .button-clear{
+    padding: 6px 46px;
+    border: 2px solid dimgray;
+    color: dimgray;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+
+    &:hover {
+      background: rgba(0,0,0,.1);
+
+    }/*hover*/
+  }/*button-pink*/
 }/*poster*/

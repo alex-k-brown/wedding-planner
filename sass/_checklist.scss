@@ -1,0 +1,105 @@
+#checklist {
+  box-sizing: border-box;
+  padding: 100px 10% 50px;
+  background: #ededed;
+
+  h2 {
+    font-style: normal;
+    font-size: 48px;
+    padding: 0;
+    color: dimgray;
+
+  }/*h2*/
+
+  .checklist-bubbles {
+    text-align: center;
+    vertical-align: top;
+    padding: 50px 0;
+
+    li {
+      vertical-align: top;
+      width: 8%;
+      display: inline-block;
+      text-align: center;
+      padding: 0 1%;
+
+      div {
+        border: 1px solid gray;
+        border-radius: 100%;
+        width: 75px;
+        height: 75px;
+        background: lightgrey;
+        margin: 0 auto;
+        text-align: right;
+
+        i {
+          text-align: right;
+          color: pink;
+          margin: 0 -15px 0 0;
+          font-size: 36px;
+
+        }
+      }/*div*/
+
+      .photo-bubble {
+        background: url("../img/photographer-icon.jpg") center;
+        background-size: cover;
+      }/*photo-bubble*/
+
+      .flower-bubble {
+        background: url("../img/florist-profile.jpg") center;
+        background-size: cover;
+      }/*photo-bubble*/
+
+      .venue-bubble {
+        background: url("../img/venue-profile.jpg") center;
+        background-size: cover;
+      }/*photo-bubble*/
+
+      .food-bubble {
+        background: url("../img/caterer-profile.jpg") center;
+        background-size: cover;
+      }/*photo-bubble*/
+
+      .entertainment-bubble {
+        background: url("../img/dj-profile.jpg") center;
+        background-size: cover;
+      }/*photo-bubble*/
+
+      .dress-bubble {
+        background: url("../img/dress-profile.jpg") center;
+        background-size: cover;
+      }/*photo-bubble*/
+
+      .hair-bubble, .invite-bubble {
+        box-sizing: border-box;
+        padding: 25px 0 0 0;
+        text-align: center;
+
+        i {
+          font-size: 24px;
+          color: gray;
+          margin: 0;
+
+        }/*i*/
+      }/*hair-bubble, invite-bubble*/
+      .more-bubble {
+        box-sizing: border-box;
+        padding: 25px 0 0 0;
+        text-align: center;
+
+        i {
+          font-size: 30px;
+          color: gray;
+          margin: 0;
+
+        }/*i*/
+      }/*more-bubble*/
+    }/*li*/
+
+    .church {
+      width: 100%;
+
+    }/*church*/
+  }/*checklist-bubbles*/
+}/*checklist*/
