@@ -5,12 +5,27 @@ body {
 
 #header {
   position: fixed;
-  padding: 20px 2% 20px 2%;
+  padding: 20px 0 0;
   vertical-align: top;
-  border-bottom: 1px solid dimgray;
+  //border-bottom: 1px solid dimgray;
   width: 100%;
   box-sizing: border-box;
   background: rgba(255,255,255,.8);
+
+  #checklist {
+    background: none;
+    padding: 0;
+
+  }/*checklist*/
+
+  a {
+    font-family: "Open Sans", sans-serif;
+    color: pink;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 28px;
+
+  }
 
   h1 {
     display: inline;
@@ -27,6 +42,8 @@ body {
     width: 30%;
     display: inline-block;
     vertical-align: top;
+    padding: 0 0 20px 2%;
+    box-sizing: border-box;
 
   }/*logo*/
 
@@ -42,7 +59,7 @@ body {
       display: inline-block;
       padding: 0 3%;
       font-family: "Open Sans", sans-serif;
-      color: dimgray;
+      color: #414141;
       font-weight: 300;
 
     }/*li*/

@@ -1,0 +1,52 @@
+#updates-modal {
+  .small-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    border: 1px solid lightgray;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+    color: dimgrey;
+
+  }/*small-input*/
+
+  .large-input {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid lightgrey;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+    color: dimgrey;
+    margin: 10px 0;
+
+  }/*large-input*/
+
+  .submit {
+    background: pink;
+    border: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    padding: 10px 30px;
+    margin: 10px 0;
+    cursor: pointer;
+
+  }/*submit*/
+
+  img {
+    width: 60px;
+    display: inline;
+
+  }/*img*/
+
+  h1 {
+    display: inline;
+
+  }/*h1*/
+}/*updates-modal*/

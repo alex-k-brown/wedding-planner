@@ -10,33 +10,48 @@ body {
 /* line 6, ../sass/_header.scss */
 #header {
   position: fixed;
-  padding: 20px 2% 20px 2%;
+  padding: 20px 0 0;
   vertical-align: top;
-  border-bottom: 1px solid dimgray;
   width: 100%;
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.8);
+  /*checklist*/
   /*h1*/
   /*logo-image*/
   /*logo*/
   /*nav*/
 }
 /* line 15, ../sass/_header.scss */
+#header #checklist {
+  background: none;
+  padding: 0;
+}
+/* line 21, ../sass/_header.scss */
+#header a {
+  font-family: "Open Sans", sans-serif;
+  color: pink;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 28px;
+}
+/* line 30, ../sass/_header.scss */
 #header h1 {
   display: inline;
   font-style: italic;
 }
-/* line 21, ../sass/_header.scss */
+/* line 36, ../sass/_header.scss */
 #header .logo-image {
   width: 60px;
 }
-/* line 26, ../sass/_header.scss */
+/* line 41, ../sass/_header.scss */
 #header .logo {
   width: 30%;
   display: inline-block;
   vertical-align: top;
+  padding: 0 0 20px 2%;
+  box-sizing: border-box;
 }
-/* line 33, ../sass/_header.scss */
+/* line 50, ../sass/_header.scss */
 #header .nav {
   display: inline-block;
   width: 68%;
@@ -45,13 +60,13 @@ body {
   padding: 20px 0 0 0;
   /*li*/
 }
-/* line 40, ../sass/_header.scss */
+/* line 57, ../sass/_header.scss */
 #header .nav li {
   list-style: none;
   display: inline-block;
   padding: 0 3%;
   font-family: "Open Sans", sans-serif;
-  color: dimgray;
+  color: #414141;
   font-weight: 300;
 }
 
@@ -71,38 +86,29 @@ h2 {
   font-size: 12px;
   padding: 0 0 0 100px;
   margin: 0;
-  color: dimgray;
+  color: #525252;
 }
 
 /*h2*/
 /* line 19, ../sass/_fonts.scss */
 h3 {
-  font-family: 'Roboto Slab', serif;
-  font-size: 18px;
-  font-weight: 300;
-  color: dimgray;
-  font-style: italic;
-}
-
-/*h3*/
-/* line 28, ../sass/_fonts.scss */
-h4 {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  color: dimgray;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 36px;
+  color: #525252;
 }
 
-/* line 36, ../sass/_fonts.scss */
+/* line 28, ../sass/_fonts.scss */
 h5 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   color: gray;
   font-style: italic;
 }
 
-/* line 45, ../sass/_fonts.scss */
+/* line 37, ../sass/_fonts.scss */
 h6 {
   font-family: 'Redressed', cursive;
   font-size: 36px;
@@ -122,12 +128,17 @@ h6 {
 }
 /* line 7, ../sass/_poster.scss */
 #poster h2 {
-  padding: 40vh 0 10vh 10%;
+  padding: 40vh 0 1vh 10%;
   font-size: 60px;
   font-style: normal;
   width: 50%;
 }
 /* line 15, ../sass/_poster.scss */
+#poster h3 {
+  padding: 0 0 2vh 10%;
+  font-size: 36px;
+}
+/* line 21, ../sass/_poster.scss */
 #poster .button-pink {
   margin: 0 2% 0 10%;
   padding: 6px 42px;
@@ -139,22 +150,22 @@ h6 {
   text-decoration: none;
   /*hover*/
 }
-/* line 25, ../sass/_poster.scss */
+/* line 31, ../sass/_poster.scss */
 #poster .button-pink:hover {
   background: #e79daa;
   border: 2px solid #e79daa;
 }
-/* line 32, ../sass/_poster.scss */
+/* line 38, ../sass/_poster.scss */
 #poster .button-clear {
   padding: 6px 46px;
-  border: 2px solid dimgray;
-  color: dimgray;
+  border: 2px solid #525252;
+  color: #525252;
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   text-decoration: none;
   /*hover*/
 }
-/* line 40, ../sass/_poster.scss */
+/* line 46, ../sass/_poster.scss */
 #poster .button-clear:hover {
   background: rgba(0, 0, 0, 0.1);
 }
@@ -163,8 +174,9 @@ h6 {
 /* line 1, ../sass/_browse.scss */
 #browse {
   box-sizing: border-box;
-  padding: 150px 10% 100px;
+  padding: 200px 10% 200px;
   /*h2*/
+  /*h3*/
   /*browse-list*/
 }
 /* line 5, ../sass/_browse.scss */
@@ -175,6 +187,10 @@ h6 {
   color: dimgray;
 }
 /* line 13, ../sass/_browse.scss */
+#browse h3 {
+  text-align: center;
+}
+/* line 18, ../sass/_browse.scss */
 #browse .browse-list {
   padding: 50px 0;
   text-align: center;
@@ -182,12 +198,12 @@ h6 {
   /*li*/
   /*browse-overlay*/
 }
-/* line 17, ../sass/_browse.scss */
+/* line 22, ../sass/_browse.scss */
 #browse .browse-list h2 {
   color: white;
   font-size: 40px;
 }
-/* line 23, ../sass/_browse.scss */
+/* line 28, ../sass/_browse.scss */
 #browse .browse-list li {
   display: inline-block;
   width: 30%;
@@ -204,72 +220,72 @@ h6 {
   /*hair*/
   /*invitation*/
 }
-/* line 28, ../sass/_browse.scss */
+/* line 33, ../sass/_browse.scss */
 #browse .browse-list li:hover {
   /*browse-overlay*/
 }
-/* line 30, ../sass/_browse.scss */
+/* line 35, ../sass/_browse.scss */
 #browse .browse-list li:hover .browse-overlay {
   display: block;
 }
-/* line 36, ../sass/_browse.scss */
+/* line 41, ../sass/_browse.scss */
 #browse .browse-list li a {
   text-decoration: none;
   /*div*/
 }
-/* line 39, ../sass/_browse.scss */
+/* line 44, ../sass/_browse.scss */
 #browse .browse-list li a div {
   width: 100%;
   height: 200px;
   padding: 100px 0 0 0;
   box-sizing: border-box;
 }
-/* line 48, ../sass/_browse.scss */
+/* line 53, ../sass/_browse.scss */
 #browse .browse-list li .photographer {
   background: url("../img/camera.jpg") center;
   background-size: cover;
 }
-/* line 54, ../sass/_browse.scss */
+/* line 59, ../sass/_browse.scss */
 #browse .browse-list li .florist {
   background: url("../img/flower.jpg") center;
   background-size: cover;
 }
-/* line 60, ../sass/_browse.scss */
+/* line 65, ../sass/_browse.scss */
 #browse .browse-list li .venue {
   background: url("../img/chandelier.jpg") center;
   background-size: cover;
 }
-/* line 65, ../sass/_browse.scss */
+/* line 70, ../sass/_browse.scss */
 #browse .browse-list li .caterer {
   background: url("../img/food.jpg") center;
   background-size: cover;
 }
-/* line 70, ../sass/_browse.scss */
+/* line 75, ../sass/_browse.scss */
 #browse .browse-list li .entertainment {
   background: url("../img/record.jpg") center;
   background-size: cover;
 }
-/* line 75, ../sass/_browse.scss */
+/* line 80, ../sass/_browse.scss */
 #browse .browse-list li .dress {
   background: url("../img/dress.jpg") center;
   background-size: cover;
 }
-/* line 81, ../sass/_browse.scss */
+/* line 86, ../sass/_browse.scss */
 #browse .browse-list li .more {
   background: url("../img/glass.jpg") center;
   background-size: cover;
 }
-/* line 87, ../sass/_browse.scss */
+/* line 92, ../sass/_browse.scss */
 #browse .browse-list li .hair {
   background: url("../img/brushes.jpg") center;
   background-size: cover;
 }
-/* line 93, ../sass/_browse.scss */
+/* line 98, ../sass/_browse.scss */
 #browse .browse-list li .invitation {
   background: url("../img/paper.jpg") center;
   background-size: cover;
 }
-/* line 100, ../sass/_browse.scss */
+/* line 105, ../sass/_browse.scss */
 #browse .browse-list .browse-overlay {
   background: rgba(0, 0, 0, 0.4);
   position: absolute;
@@ -282,9 +298,10 @@ h6 {
 /* line 1, ../sass/_checklist.scss */
 #checklist {
   box-sizing: border-box;
-  padding: 100px 10% 50px;
+  padding: 200px 10% 200px;
   background: #ededed;
   /*h2*/
+  /*h3*/
   /*checklist-bubbles*/
 }
 /* line 6, ../sass/_checklist.scss */
@@ -292,23 +309,33 @@ h6 {
   font-style: normal;
   font-size: 48px;
   padding: 0;
-  color: dimgray;
+  color: #525252;
 }
 /* line 14, ../sass/_checklist.scss */
+#checklist h3 {
+  padding: 0 0 75px;
+}
+/* line 18, ../sass/_checklist.scss */
 #checklist .checklist-bubbles {
   text-align: center;
   vertical-align: top;
   padding: 50px 0;
+  background: rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding: 20px 0 20px;
   /*li*/
   /*church*/
 }
-/* line 19, ../sass/_checklist.scss */
+/* line 26, ../sass/_checklist.scss */
 #checklist .checklist-bubbles li {
   vertical-align: top;
   width: 8%;
   display: inline-block;
   text-align: center;
   padding: 0 1%;
+  /*hover*/
+  /*h5*/
+  /*overlay-bubble*/
   /*div*/
   /*photo-bubble*/
   /*photo-bubble*/
@@ -319,80 +346,117 @@ h6 {
   /*hair-bubble, invite-bubble*/
   /*more-bubble*/
 }
-/* line 26, ../sass/_checklist.scss */
+/* line 33, ../sass/_checklist.scss */
+#checklist .checklist-bubbles li:hover {
+  /*h5, overlay-bubble*/
+}
+/* line 35, ../sass/_checklist.scss */
+#checklist .checklist-bubbles li:hover h5, #checklist .checklist-bubbles li:hover .overlay-bubble {
+  display: block;
+}
+/* line 41, ../sass/_checklist.scss */
+#checklist .checklist-bubbles li h5 {
+  margin: -35px 0 0 30px;
+  color: white;
+  text-align: left;
+  z-index: 1000;
+  position: absolute;
+  display: none;
+  width: 85px;
+  padding: 0 0 0 10px;
+  text-indent: -10px;
+}
+/* line 54, ../sass/_checklist.scss */
+#checklist .checklist-bubbles li .overlay-bubble {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  display: none;
+}
+/* line 66, ../sass/_checklist.scss */
 #checklist .checklist-bubbles li div {
-  border: 1px solid gray;
   border-radius: 100%;
   width: 75px;
   height: 75px;
   background: lightgrey;
-  margin: 0 auto;
   text-align: right;
+  /*i*/
+  /*center-icon*/
 }
-/* line 35, ../sass/_checklist.scss */
+/* line 74, ../sass/_checklist.scss */
 #checklist .checklist-bubbles li div i {
-  text-align: right;
-  color: pink;
-  margin: 0 -15px 0 0;
-  font-size: 36px;
+  text-align: center;
+  color: white;
+  font-size: 28px;
 }
-/* line 44, ../sass/_checklist.scss */
+/* line 81, ../sass/_checklist.scss */
+#checklist .checklist-bubbles li div .center-icon {
+  display: block;
+  text-align: center;
+  margin: -15px 0 0 0;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 10px;
+}
+/* line 91, ../sass/_checklist.scss */
 #checklist .checklist-bubbles li .photo-bubble {
   background: url("../img/photographer-icon.jpg") center;
   background-size: cover;
 }
-/* line 49, ../sass/_checklist.scss */
+/* line 96, ../sass/_checklist.scss */
 #checklist .checklist-bubbles li .flower-bubble {
   background: url("../img/florist-profile.jpg") center;
   background-size: cover;
 }
-/* line 54, ../sass/_checklist.scss */
+/* line 101, ../sass/_checklist.scss */
 #checklist .checklist-bubbles li .venue-bubble {
   background: url("../img/venue-profile.jpg") center;
   background-size: cover;
 }
-/* line 59, ../sass/_checklist.scss */
+/* line 106, ../sass/_checklist.scss */
 #checklist .checklist-bubbles li .food-bubble {
   background: url("../img/caterer-profile.jpg") center;
   background-size: cover;
 }
-/* line 64, ../sass/_checklist.scss */
+/* line 111, ../sass/_checklist.scss */
 #checklist .checklist-bubbles li .entertainment-bubble {
   background: url("../img/dj-profile.jpg") center;
   background-size: cover;
 }
-/* line 69, ../sass/_checklist.scss */
+/* line 116, ../sass/_checklist.scss */
 #checklist .checklist-bubbles li .dress-bubble {
   background: url("../img/dress-profile.jpg") center;
   background-size: cover;
 }
-/* line 74, ../sass/_checklist.scss */
+/* line 121, ../sass/_checklist.scss */
 #checklist .checklist-bubbles li .hair-bubble, #checklist .checklist-bubbles li .invite-bubble {
   box-sizing: border-box;
   padding: 25px 0 0 0;
   text-align: center;
   /*i*/
 }
-/* line 79, ../sass/_checklist.scss */
+/* line 126, ../sass/_checklist.scss */
 #checklist .checklist-bubbles li .hair-bubble i, #checklist .checklist-bubbles li .invite-bubble i {
   font-size: 24px;
   color: gray;
   margin: 0;
 }
-/* line 86, ../sass/_checklist.scss */
+/* line 133, ../sass/_checklist.scss */
 #checklist .checklist-bubbles li .more-bubble {
   box-sizing: border-box;
   padding: 25px 0 0 0;
   text-align: center;
   /*i*/
 }
-/* line 91, ../sass/_checklist.scss */
+/* line 138, ../sass/_checklist.scss */
 #checklist .checklist-bubbles li .more-bubble i {
   font-size: 30px;
   color: gray;
   margin: 0;
 }
-/* line 100, ../sass/_checklist.scss */
+/* line 147, ../sass/_checklist.scss */
 #checklist .checklist-bubbles .church {
   width: 100%;
 }
@@ -507,3 +571,59 @@ h6 {
 }
 
 /*footer*/
+/* line 1, ../sass/_updates-modal.scss */
+#updates-modal {
+  /*small-input*/
+  /*large-input*/
+  /*submit*/
+  /*img*/
+  /*h1*/
+}
+/* line 2, ../sass/_updates-modal.scss */
+#updates-modal .small-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 18px;
+  border: 1px solid lightgray;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+  color: dimgrey;
+}
+/* line 15, ../sass/_updates-modal.scss */
+#updates-modal .large-input {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid lightgrey;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+  color: dimgrey;
+  margin: 10px 0;
+}
+/* line 29, ../sass/_updates-modal.scss */
+#updates-modal .submit {
+  background: pink;
+  border: none;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  padding: 10px 30px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+/* line 42, ../sass/_updates-modal.scss */
+#updates-modal img {
+  width: 60px;
+  display: inline;
+}
+/* line 48, ../sass/_updates-modal.scss */
+#updates-modal h1 {
+  display: inline;
+}
+
+/*updates-modal*/

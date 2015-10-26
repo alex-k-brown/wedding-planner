@@ -5,12 +5,18 @@
   background-size: cover;
 
   h2 {
-    padding: 40vh 0 10vh 10%;
+    padding: 40vh 0 1vh 10%;
     font-size: 60px;
     font-style: normal;
     width: 50%;
 
   }/*h2*/
+
+  h3 {
+    padding: 0 0 2vh 10%;
+    font-size: 36px;
+
+  }
 
   .button-pink{
     margin: 0 2% 0 10%;
@@ -31,8 +37,8 @@
 
   .button-clear{
     padding: 6px 46px;
-    border: 2px solid dimgray;
-    color: dimgray;
+    border: 2px solid #525252;
+    color: #525252;
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     text-decoration: none;
